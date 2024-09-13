@@ -2,8 +2,9 @@ import {React,useState} from 'react'
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import Image from 'next/image'
+import { useSearchParams } from 'next/navigation'
 
-export default function MainBody(props) {
+export default function MainBody() {
 
 
 //use sattes
@@ -11,6 +12,8 @@ const [inputname,setName] = useState();
 const [upi,setUpi] = useState("");
 const [number,setNumber] = useState("");
 
+const params = useSearchParams();
+let valueOfq = params.get("a")||"agl";
 
 const MySwal = withReactContent(Swal);
 
@@ -92,10 +95,10 @@ const handleClick = async()=>{
     <div className=' text-center p-10 justify-center items-center rounded bg-black flex flex-col min-h-2/3 w-90'>
         
     <h1 className='text-xl mt-10 text-white'>
-        Download {textValue[props.value]["title"]}
+        Download {textValue[valueOfq]["title"]}
     </h1>
-    <h5 className='text-gray-500'>get {textValue[props.value]["ruppe"]} rupees instant</h5>
-    <Image width={200} height={200} src={textValue[props.value]["img"]}/>
+    <h5 className='text-gray-500'>get {textValue[valueOfq]["ruppe"]} rupees instant</h5>
+    <Image width={200} height={200} src={textValue[valueOfq]["img"]}/>
 
     <div className='text-left  mx-auto my-10'>
         <label htmlFor="first_name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
