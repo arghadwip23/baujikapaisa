@@ -58,7 +58,7 @@ const handleClick = async()=>{
             name:inputname,
             upiid:upi,
             number:number,
-            app: props.value
+            app: valueOfq
         }
         let a = await fetch("/api/add",{method:"POST",headers:{
             "Content-Type":"application/json",
