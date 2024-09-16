@@ -28,6 +28,12 @@ const textValue = {
         title:'Winzo',
         ruppe: 39,
         img:"/wzo.png"
+    },
+    cdx:{
+        title:"Coin DCX",
+        ruppe:15,
+        img:"/CoinDCX.png"
+
     }
 }
 //functuion to check upi id
@@ -58,7 +64,7 @@ const handleClick = async()=>{
             name:inputname,
             upiid:upi,
             number:number,
-            app: valueOfq
+            app: valueOfq 
         }
         let a = await fetch("/api/add",{method:"POST",headers:{
             "Content-Type":"application/json",

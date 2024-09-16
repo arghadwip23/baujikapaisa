@@ -5,7 +5,8 @@ import { collection,addDoc } from "@firebase/firestore";
 export async function POST(request) {
 let link={
     agl:"https://angel-one.onelink.me/Wjgr/mlhw3tsu",
-    wzo:"https://winzo.onelink.me/gu8K/x7ntyxk0 "
+    wzo:"https://winzo.onelink.me/gu8K/x7ntyxk0 ",
+    cdx:"https://join.coindcx.com/invite/Z2qU"
 }
 
 
