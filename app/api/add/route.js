@@ -7,7 +7,7 @@ const tele = `https://api.telegram.org/${process.env.TELEGRAM_API}/sendMessage?c
 const teles = `https://api.telegram.org/${process.env.TELEGRAM_API}/sendMessage?chat_id=1548471825&text=done`;
 let link={
     agl:"https://angel-one.onelink.me/Wjgr/mlhw3tsu",
-    wzo:"https://winzo.onelink.me/gu8K/x7ntyxk0 ",
+    wzo:"https://winzo.onelink.me/gu8K/x7ntyxk0",
     cdx:"https://join.coindcx.com/invite/Z2qU"
 }
 
